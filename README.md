@@ -8,7 +8,7 @@ It reaches an interactor through the same request envelope and services as any o
 
 ## Build and run
 
-With the harness's Python package from `third_party/harness` on the path, the first command sends one command to whichever interactor is on the bus, and the second checks the reply reader against bytes the interactors write.
+The first command sends one command to whichever interactor is on the bus and needs the harness's Python package, `third_party/harness/python`, on the path. The second checks the reply reader against bytes the interactors write and runs without it.
 
 ```sh
 python -m buscli <command>
